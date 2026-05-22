@@ -48,11 +48,7 @@ const NavBar = () => {
          <a> Notification</a>
       </li>
 
-      <li className="text-lg">
-        <a> UserId : user1  </a>
-      </li>
-
-    </ul>
+   </ul>
 
   </div>
 
