@@ -17,8 +17,6 @@ const SummaryBar = () => {
     try {
       const res = await axios.get(`${BASE_URL}/stats?userId=${userId}`);
 
-      console.log(res.data);
-
       setStats(res.data.data);
     } catch (error) {
       console.log(error);

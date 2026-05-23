@@ -30,6 +30,6 @@ http://localhost:5173
 
 Start the backend application first and ensure it is running on port `9000`.
 
-Next, start the frontend application and open the Notification Dashboard by clicking the Notification button in the navbar or visiting `http://localhost:5173/stats`.
+Next, start the frontend application and open the Notification Dashboard by clicking the Notification button in the navbar or visiting `http://localhost:5173`.
 
 Start the simulator application running on port `3001`

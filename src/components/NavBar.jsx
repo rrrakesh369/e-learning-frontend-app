@@ -45,7 +45,7 @@ const NavBar = () => {
       <div className=" navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal gap-4 px-1">
           <li className="text-xl font-semibold">
-            <Link to="/stats">Notification</Link>
+            <Link to="/">Notification</Link>
           </li>
         </ul>
       </div>
