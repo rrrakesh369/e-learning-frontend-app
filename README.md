@@ -26,6 +26,9 @@ The frontend application will start in development mode and provide a local URL 
 http://localhost:5173
 ```
 
+Clone the repository:
+https://github.com/rrrakesh369/e-learning-frontend-app
+
 ## Section 4: How to Test the Flow
 
 Start the backend application first and ensure it is running on port `9000`.
