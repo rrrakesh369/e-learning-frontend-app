@@ -1,60 +1,56 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
-  return (<div className="navbar bg-base-100 shadow-sm">
+  return (
+    <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
 
-  <div className="navbar-start">
+          <ul
+            tabIndex={0}
+            className=" menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow"
+          >
+            <li className="text-xl">
+              <a> Notification </a>
+            </li>
 
-    <div className="dropdown">
+            <li>
+              <a> UserId : user1 </a>
+            </li>
+          </ul>
+        </div>
 
-      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden" >
-
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
-
-        </svg>
-
+        <a className=" btn btn-ghost text-xl"> e-learning </a>
       </div>
 
-      <ul tabIndex={0} className=" menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow">
+      {/* CENTER */}
 
-        <li className="text-xl">
-
-          <a> Notification </a>
-
-        </li>
-
-        <li>
-
-          <a> UserId : user1 </a>
-
-        </li>
-
-      </ul>
-
+      <div className=" navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal gap-4 px-1">
+          <li className="text-xl font-semibold">
+            <Link to="/stats">Notification</Link>
+          </li>
+        </ul>
+      </div>
     </div>
+  );
+};
 
-    <a className=" btn btn-ghost text-xl"> e-learning </a>
-  </div>
-
-  {/* CENTER */}
-
-  <div className=" navbar-center hidden lg:flex">
-
-    <ul className="menu menu-horizontal gap-4 px-1">
-
-      <li className="text-xl font-semibold">
-         <a> Notification</a>
-      </li>
-
-   </ul>
-
-  </div>
-
-</div>
-
-  )
-}
-
-export default NavBar
+export default NavBar;

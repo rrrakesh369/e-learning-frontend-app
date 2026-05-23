@@ -1,16 +1,35 @@
-# React + Vite
+## Section 3: How to Run the Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Steps to Run the Frontend
 
-Currently, two official plugins are available:
+1. Navigate to the frontend directory:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+cd frontend
+```
 
-## React Compiler
+2. Install dependencies:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+```
 
-## Expanding the ESLint configuration
+3. Run the frontend application:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm run dev
+```
+
+The frontend application will start in development mode and provide a local URL (for example):
+
+```bash
+http://localhost:5173
+```
+
+## Section 4: How to Test the Flow
+
+Start the backend application first and ensure it is running on port `9000`.
+
+Next, start the frontend application and open the Notification Dashboard by clicking the Notification button in the navbar or visiting `http://localhost:5173/stats`.
+
+Start the simulator application running on port `3001`
